@@ -1,8 +1,6 @@
-sudo install python
-sudo pip install flask
-sudo pip install mysql-connector-python
+#!/bin/bash
 
-DIR="/home/ec2-user/lugage-app"
+DIR="/home/ec2-user/luggage-app"
 if [-d "$DIR" ]; then
 	echo "${DIR} exists"
 else
