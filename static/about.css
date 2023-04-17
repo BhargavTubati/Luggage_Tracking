@@ -1,0 +1,154 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+ /* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav li.login-link {
+    margin-left: auto; /* add this property to move the "Login" link to the right */
+  }
+ 
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+
+.about-us{
+  height: 60vh;
+  width: 100%;
+  padding: 30px 0;
+  background: #ddd;
+}
+.pic{
+  height: auto;
+  width:  302px;
+}
+.about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+span{
+  color: #4070f4;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover{
+  background: #000;
+  border: 1px solid #4070f4;
+}
+
+.col-md-6 {
+    width: 50%;
+    padding: 0 15px;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    left: 26%;
+    bottom: 1%;
+    position: absolute;
+  }
+  
+  .team-member {
+    width: 30%;
+    margin-bottom: 50px;
+    text-align: center;
+    align-items: center; /* add this property to center the images */
+  }
+  
+  .team-member img {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 50%;
+  }
+  
+  .team-member h4 {
+    margin-bottom: 5px;
+  }
+  
+  .team-member p {
+    margin: 0;
+  }
+  
+  
+  
+  

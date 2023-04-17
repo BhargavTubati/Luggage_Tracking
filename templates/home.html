@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luggage Tracking System - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('view.index') }}">Home</a></li>
+                <li><a href="{{ url_for('view.tracking') }}">Tracking</a></li>
+                <li class="login-link"><a href="{{ url_for('view.loginpage') }}">Login</a></li>
+                <li><a href="{{ url_for('view.about') }}">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Track Your Luggage Anywhere, Anytime</h1>
+            <p>Our luggage tracking system gives you peace of mind when you travel.</p>
+            <img src="{{ url_for('static', filename='home1.jpg') }}" alt="Person traveling with luggage">
+        </section>
+        <section class="benefits">
+            <h2>Benefits of Our Luggage Tracking System</h2>
+            <ul>
+                <li>Real-time tracking</li>
+                <li>Instant notifications</li>
+                <li>Worldwide coverage</li>
+            </ul>
+            <div class="tracking">
+                <h1>Track ID</h1>
+	            <form action="/track" method="POST">
+		        <label for="id">Enter ID:</label>
+		        <input type="text" id="id" name="id" required>
+		        <button type="submit">Track</button>
+	            </form>
+            </div>
+        </section>
+        <section class="features">
+            <h2>Features of Our Luggage Tracking System</h2>
+            <ul>
+                <li>Set alerts for baggage movement</li>
+                <li>Baggage delivery tracking</li>
+                <li>Baggage retrieval reminders</li>
+            </ul>
+        </section>
+        <section class="coverage">
+            <h2>Worldwide Coverage Map</h2>
+        </section>
+    </main>
+</body>
+</html>

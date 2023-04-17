@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User List</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-top: 20px;
+		}
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border-bottom: 1px solid #ddd;
+		}
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+		tr:hover {
+			background-color: #f5f5f5;
+		}
+	</style>
+	<link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+	<header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('view.index') }}">Home</a></li>
+                <li><a href="{{ url_for('view.tracking') }}">Tracking</a></li>
+                <li class="login-link"><a href="{{ url_for('view.loginpage') }}">Login</a></li>
+                <li><a href="{{ url_for('view.about') }}">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+	<h1>User List</h1>
+	{% if users %}
+		<table>
+			<thead>
+				<tr>
+					<th>Customer Name</th>
+					<th>Number of lugages</th>
+					<th>Destination</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for user in users %}
+					<tr>
+						<td>{{ user[0] }}</td>
+						<td>{{ user[1] }}</td>
+						<td>{{ user[2] }}</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	{% else %}
+		<p>No users found.</p>
+	{% endif %}
+
+	<!-- Debugging code to display the 'users' variable -->
+	
+</body>
+</html>

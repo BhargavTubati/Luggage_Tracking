@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luggage Tracking System - login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+	<header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('view.index') }}">Home</a></li>
+                <li><a href="{{ url_for('view.tracking') }}">Tracking</a></li>
+                <li class="login-link"><a href="{{ url_for('view.loginpage') }}">Login</a></li>
+                <li><a href="{{ url_for('view.about') }}">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+	<main>
+	<h1>Login</h1>
+	<form action="{{ url_for('view.login') }}" method="post">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username"><br><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"><br><br>
+		<input type="submit" value="Login">
+		<p class="form__text">
+			<a class="form__link" href="{{ url_for('view.registerpage') }}" id="linkCreateAccount">Don't have an account? Create account</a>
+		</p>
+	</form>
+	
+</main>
+</body>
+</html>
